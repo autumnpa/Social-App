@@ -3,12 +3,16 @@ import {StyleSheet, Text, View} from 'react-native';
 
 export default function App() {
   return (
-    <View>
+    <View styles={styles.container}>
       <Text>BeRealCrossing</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
