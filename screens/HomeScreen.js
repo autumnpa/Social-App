@@ -1,19 +1,19 @@
 import React from 'react';
-import {SafeAreaView, Text, View, StyleSheet} from 'react-native';
-import Header from '../components/home/Header';
+import {Text, View, SafeAreaView, StyleSheet} from 'react-native';
+import AppHeader from '../components/home/AppHeader';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView styles={styles.container}>
       {/* Add header component here */}
-      <Header />
+      <AppHeader />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'black',
+    backgroundColor: 'blue',
     flex: 1,
   },
 });
