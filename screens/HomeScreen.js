@@ -4,7 +4,7 @@ import AppHeader from '../components/home/AppHeader';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView styles={styles.container}>
+    <SafeAreaView style={styles.container}>
       {/* Add header component here */}
       <AppHeader />
     </SafeAreaView>
