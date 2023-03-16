@@ -2,9 +2,11 @@ import React from 'react';
 import {View, Text} from 'react-native';
 
 const AppHeader = () => {
-  <View>
-    <Text>Hello</Text>
-  </View>;
+  return (
+    <View>
+      <Text style={{color: 'white'}}>Hello</Text>
+    </View>
+  );
 };
 
 export default AppHeader;
