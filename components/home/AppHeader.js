@@ -8,7 +8,10 @@ const AppHeader = () => {
     <View style={styles.logoContainer}>
       <Image style={styles.logo} source={require('../../assets/logo.png')} />
       {/* Icon container (right div) */}
-      <View style={styles.iconContainer} />
+      <View style={styles.iconContainer}>
+        {/* Add icons here - use source uri */}
+        {/* TODO - touchable opacity */}
+      </View>
     </View>
   );
 };
