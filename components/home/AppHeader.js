@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
 
 const AppHeader = () => {
   return (
     <View>
-      <Text style={{color: 'white'}}>Hello</Text>
+      <Image source={require('')} />
     </View>
   );
 };
