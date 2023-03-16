@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 
+// Header needs to be a container with 2 views (divs) inside it to hold the logo and the icons
 const AppHeader = () => {
   return (
     <View>
