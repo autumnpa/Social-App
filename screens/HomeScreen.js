@@ -5,14 +5,14 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       {/* Add header component here */}
-      <Text styles={styles.test}>Hello</Text>
+      <Text>Hello</Text>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'black',
+    backgroundColor: 'grey',
     flex: 1,
   },
 });
