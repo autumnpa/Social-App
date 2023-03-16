@@ -13,7 +13,7 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'black',
+    backgroundColor: 'grey',
     flex: 1,
   },
 });

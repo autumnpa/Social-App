@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   icon: {
-    color: 'white',
+    width: 30,
+    height: 30,
   },
 });
 export default AppHeader;
