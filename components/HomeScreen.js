@@ -6,13 +6,7 @@ import {SafeAreaView, Text, View} from 'react-native';
 // Images
 // Footer
 const HomeScreen = () => {
-  return (
-    <SafeAreaView>
-      <View>
-        <Text>Home Screen</Text>
-      </View>
-    </SafeAreaView>
-  );
+  return <SafeAreaView>{/* Create header in here */}</SafeAreaView>;
 };
 
 export default HomeScreen;
