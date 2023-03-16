@@ -4,7 +4,7 @@ import {View, Text, Image} from 'react-native';
 const AppHeader = () => {
   return (
     <View>
-      <Image source={require('')} />
+      <Image source={require('../../assets/logo.png')} />
     </View>
   );
 };
