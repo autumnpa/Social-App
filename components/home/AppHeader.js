@@ -3,7 +3,8 @@ import {View, Text} from 'react-native';
 
 const AppHeader = () => {
   <View>
-    <Text>Header</Text>
+    <Text>Hello</Text>
   </View>;
 };
+
 export default AppHeader;
