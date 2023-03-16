@@ -5,7 +5,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       {/* Add header component here */}
-      <Header />
+      <Text styles={styles.test}>Hello</Text>
     </SafeAreaView>
   );
 };
