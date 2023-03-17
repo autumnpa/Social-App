@@ -81,7 +81,7 @@ const PostFooter = () => {
     </View>
   );
   return (
-    <View>
+    <View style={styles.footerIconContain}>
       <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[0].imageURL} />
       <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[1].imageURL} />
       <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[2].imageURL} />
@@ -121,6 +121,9 @@ const styles = StyleSheet.create({
   postImage: {
     height: '100%',
     resizeMode: 'cover',
+  },
+  footerIconContain: {
+    flexDirection: 'row',
   },
   footerIcon: {
     width: 30,
