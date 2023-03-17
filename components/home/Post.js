@@ -35,7 +35,7 @@ const PostHeader = ({post}) => {
 // Needs to grab the object from my arrays to display the post images from the data files
 const PostImage = ({post}) => {
   // DONT FORGET THE RETURN THIS TIME!!!
-  return <Image source={{uri: post.imageUrl}} style={styles.postImage} />;
+  return <Image source={{uri: post.imageURL}} style={styles.postImage} />;
 };
 
 const styles = StyleSheet.create({
