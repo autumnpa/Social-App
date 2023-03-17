@@ -3,8 +3,24 @@ import {Text, View, Image, StyleSheet} from 'react-native';
 
 // Create Array of icons to use in the footer - like, comment, share, and save
 const PostFooterIcons = [
-
-]
+  {
+    // Like
+    // Have a version that shows liked and unliked icons
+    iconName: 'Like',
+    imageURL: '',
+    likedImageURL: '',
+  },
+  {
+    // Comment
+    iconName: 'Comment',
+    imageURL: '',
+  },
+  {
+    // Share
+    iconName: 'Share',
+    imageURL: '',
+  },
+];
 // Initialize Post
 // Takes in a post so we can use it within the return
 const Post = ({post}) => {
@@ -50,7 +66,6 @@ const PostImage = ({post}) => {
 
 // Create post footer here
 // Needs to have comments and icons - do I make this to be the interactive element for users?
-
 
 const styles = StyleSheet.create({
   postHeadContain: {
