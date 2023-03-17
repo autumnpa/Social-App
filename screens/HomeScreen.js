@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View, SafeAreaView, StyleSheet} from 'react-native';
 import AppHeader from '../components/home/AppHeader';
 import Stories from '../components/home/Stories';
+import Post from '../components/home/Post';
 
 const HomeScreen = () => {
   return (
@@ -9,6 +10,7 @@ const HomeScreen = () => {
       {/* Add header component here */}
       <AppHeader />
       <Stories />
+      <Post />
     </SafeAreaView>
   );
 };
