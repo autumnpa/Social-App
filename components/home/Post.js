@@ -81,7 +81,11 @@ const PostFooter = () => {
       <Image style={imgStyle} source={{uri: imgURL}} />
     </View>
   );
+// Likes data component goes here
+const Likes = ({post}) => (
 
+)
+}
   return (
     <View style={styles.footerIconContain}>
       {/* First 3 icons in a view (div) together because they are displaying on the left */}
