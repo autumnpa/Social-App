@@ -44,6 +44,9 @@ const PostImage = ({post}) => {
   );
 };
 
+// Create post footer here
+// Needs to have comments and such - do I make this to be the interactive element for users?
+
 const styles = StyleSheet.create({
   postHeadContain: {
     flexDirection: 'row',
