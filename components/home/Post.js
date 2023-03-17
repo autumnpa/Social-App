@@ -45,7 +45,7 @@ const PostImage = ({post}) => {
 };
 
 // Create post footer here
-// Needs to have comments and such - do I make this to be the interactive element for users?
+// Needs to have comments and icons - do I make this to be the interactive element for users?
 
 const styles = StyleSheet.create({
   postHeadContain: {
@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     // Changes the default lay out to render under the profile pic and render beside it
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 5,
   },
   userName: {
     marginLeft: 5,
