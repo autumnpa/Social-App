@@ -32,8 +32,14 @@ const Likes = ({post}) => {
   return <Text>{post.likes} likes</Text>;
 };
 // Create caption - similar to Likes component
+// Add users name before the caption - needs to be bolded
 const Caption = ({post}) => {
-  return <Text>{post.caption}</Text>;
+  return (
+    <Text>
+      <Text style={styles.userNameCaption}>{post.user}</Text>
+      <Text>{post.caption}</Text>
+    </Text>
+  );
 };
 // Initialize Post
 // Takes in a post so we can use it within the return
@@ -173,6 +179,9 @@ const styles = StyleSheet.create({
   rightIcon: {
     flex: 1,
     alignItems: 'flex-end',
+  },
+  userNameCaption: {
+    fontWeight: '600',
   },
 });
 
