@@ -29,7 +29,7 @@ const postFooterIcons = [
 // Likes data component goes here
 // Use within the post footer component
 const Likes = ({post}) => {
-  return <Text style={styles.likesContain}>{post.likes} likes</Text>;
+  return <Text style={styles.boldText}>{post.likes} likes</Text>;
 };
 // Create caption - similar to Likes component
 // Add users name before the caption - needs to be bolded
@@ -37,8 +37,8 @@ const Caption = ({post}) => {
   return (
     <View style={styles.captionContain}>
       <Text>
-        <Text style={styles.userNameCaption}>{post.user}</Text>
-        <Text>{post.caption}</Text>
+        <Text style={styles.boldText}>{post.user}</Text>
+        <Text> {post.caption}</Text>
       </Text>
     </View>
   );
@@ -70,7 +70,7 @@ const PostHeader = ({post}) => {
         {/* User image */}
         <Image source={{uri: post.profile}} style={styles.postHeadProfile} />
         {/* User name */}
-        <Text style={styles.userName}>{post.user}</Text>
+        <Text style={styles.boldText}>{post.user}</Text>
       </View>
       {/* Fake more settings/menu "button" */}
       <Text>...</Text>
@@ -151,9 +151,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 5,
   },
-  userName: {
-    marginLeft: 5,
-  },
   postImageContain: {
     width: '100%',
     height: 350,
@@ -182,14 +179,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'flex-end',
   },
-  likesContain: {
-    marginTop: 5,
-  },
   captionContain: {
-    marginTop: 5,
+    margin: 5,
   },
-  userNameCaption: {
+  boldText: {
     fontWeight: '600',
+    margin: 5,
   },
 });
 
