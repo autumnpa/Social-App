@@ -13,9 +13,11 @@ const HomeScreen = () => {
       <Stories />
       {/* Wrap in a loop so it can access array data and create posts */}
       <ScrollView>
-        {/* TODO - Add unique key here to remove error */}
-        {posts.map((post) => (
-          <Post post={post} />
+        {/* - DONE!! TODO - Add unique key here to remove error */}
+        {/* For each post from my data it is looped and then sent to my post component and manipulated further */}
+        {posts.map((post, index) => (
+          // Accesses the posts
+          <Post post={post} key={index} />
         ))}
       </ScrollView>
     </SafeAreaView>
