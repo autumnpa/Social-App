@@ -13,6 +13,7 @@ const HomeScreen = () => {
       <Stories />
       {/* Wrap in a loop so it can access array data and create posts */}
       <ScrollView>
+        {/* TODO - Add unique key here to remove error */}
         {posts.map((post) => (
           <Post post={post} />
         ))}
