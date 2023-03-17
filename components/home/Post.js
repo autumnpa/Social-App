@@ -35,6 +35,11 @@ const Post = ({post}) => {
       {/* Post header goes here */}
       <PostHeader post={post} />
       <PostImage post={post} />
+      <View>
+        <PostFooter>
+          
+        </PostFooter>
+      </View>
     </View>
   );
 };
@@ -71,6 +76,11 @@ const PostImage = ({post}) => {
 
 // Create post footer here
 // Needs to have comments and icons - do I make this to be the interactive element for users?
+const PostFooter = () => {
+  return (
+
+  )
+}
 
 const styles = StyleSheet.create({
   postHeadContain: {
