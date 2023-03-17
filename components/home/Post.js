@@ -30,6 +30,9 @@ const PostHeader = ({post}) => {
   );
 };
 
+// Create post image component
+// Needs to grab the object from my arrays to display the post images from the data files
+
 const styles = StyleSheet.create({
   postHeadContain: {
     flexDirection: 'row',
