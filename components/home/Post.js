@@ -7,18 +7,23 @@ const PostFooterIcons = [
     // Like
     // Have a version that shows liked and unliked icons
     iconName: 'Like',
-    imageURL: '',
-    likedImageURL: '',
+    imageURL: 'https://img.icons8.com/ios-glyphs/2x/hearts.png',
+    likedImageURL: 'https://img.icons8.com/ios-glyphs/2x/like--v1.png',
   },
   {
     // Comment
     iconName: 'Comment',
-    imageURL: '',
+    imageURL: 'https://img.icons8.com/ios-glyphs/2x/filled-topic.png',
   },
   {
     // Share
     iconName: 'Share',
-    imageURL: '',
+    imageURL: 'https://img.icons8.com/ios-glyphs/2x/filled-sent.png',
+  },
+  {
+    // Save
+    iconName: 'Save',
+    imageURL: 'https://img.icons8.com/ios-glyphs/2x/bookmark-ribbon.png',
   },
 ];
 // Initialize Post
