@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginLeft: 6,
     borderWidth: 3,
+    borderColor: 'pink',
   },
 });
 
