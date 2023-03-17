@@ -75,12 +75,13 @@ const PostImage = ({post}) => {
 // Create post footer here
 // Needs to have comments and icons - do I make this to be the interactive element for users?
 const PostFooter = () => {
-  // TODO - Save icon needs to be displayed on the far right side of the screen int he footer component
+  // DONE - TODO - Save icon needs to be displayed on the far right side of the screen int he footer component
   const Icon = ({imgStyle, imgURL}) => (
     <View>
       <Image style={imgStyle} source={{uri: imgURL}} />
     </View>
   );
+
   return (
     <View style={styles.footerIconContain}>
       {/* First 3 icons in a view (div) together because they are displaying on the left */}
