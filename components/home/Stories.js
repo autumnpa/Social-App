@@ -7,6 +7,7 @@ const Stories = () => {
     <View>
       {/* Scrollview horizontal?? The pics currently stack in a column */}
       <ScrollView horizontal>
+        {/* TODO - Add more styling - check documentation for options */}
         {users.map((story, index) => (
           <Image source={{uri: story.image}} style={styles.story} />
         ))}
