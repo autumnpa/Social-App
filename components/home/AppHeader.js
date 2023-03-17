@@ -11,6 +11,7 @@ const AppHeader = () => {
       <View style={styles.iconContainer}>
         {/* Add icons here - use source uri */}
         {/* TODO - touchable opacity */}
+        {/* TODO - fix icon display issues */}
         <Image
           source={{
             uri: 'https://www.flaticon.com/free-icon-font/heart_3916579?related_id=3916579',
@@ -42,6 +43,8 @@ const styles = StyleSheet.create({
   icon: {
     width: 30,
     height: 30,
+    marginLeft: 10,
+    resizeMode: 'contain',
   },
 });
 export default AppHeader;
