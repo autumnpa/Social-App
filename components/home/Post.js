@@ -24,6 +24,7 @@ const PostHeader = ({post}) => {
         {/* User name */}
         <Text style={styles.userName}>{post.user}</Text>
       </View>
+      <Text>...</Text>
     </View>
   );
 };
