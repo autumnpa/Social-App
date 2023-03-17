@@ -84,7 +84,8 @@ const PostFooter = () => {
   return (
     <View style={styles.footerIconContain}>
       {/* First 3 icons in a view (div) together because they are displaying on the left */}
-      <View>
+      {/* These icons need their own styling so they can be displayed left */}
+      <View style={styles.leftIcons}>
         <Icon
           imgStyle={styles.footerIcon}
           imgURL={postFooterIcons[0].imageURL}
@@ -99,7 +100,8 @@ const PostFooter = () => {
         />
       </View>
       {/* Save icon displays on the right side in the same row so it needs its own view */}
-      <View>
+      {/* Needs separate styling to be displayed where I want it to */}
+      <View style={styles.rightIcon}>
         <Icon
           imgStyle={styles.footerIcon}
           imgURL={postFooterIcons[3].imageURL}
@@ -151,6 +153,15 @@ const styles = StyleSheet.create({
   footerIcon: {
     width: 30,
     height: 30,
+  },
+  leftIcons: {
+    flexDirection: 'row',
+    width: '30%',
+    justifyContent: 'space-between',
+  },
+  rightIcon: {
+    flex: 1,
+    alignItems: 'flex-end',
   },
 });
 
