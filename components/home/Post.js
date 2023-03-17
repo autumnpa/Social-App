@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
   postImageContain: {
     width: '100%',
-    height: 450,
+    height: 350,
   },
   postImage: {
     height: '100%',
