@@ -1,6 +1,9 @@
 import {users} from './users';
 
 // Fake post data
+// Image is rendered in the PostImage component
+// User and Profile get rendered in the post header above the photo (Profile pic and username)
+// Likes and caption get rendered in the post footer underneath the image
 export const posts = [
   {
     // Image posted
