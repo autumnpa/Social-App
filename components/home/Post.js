@@ -36,7 +36,7 @@ const Post = ({post}) => {
       <PostHeader post={post} />
       <PostImage post={post} />
       <View>
-        <PostFooter />
+        <PostFooter style={styles.postFooter} />
       </View>
     </View>
   );
@@ -75,6 +75,7 @@ const PostImage = ({post}) => {
 // Create post footer here
 // Needs to have comments and icons - do I make this to be the interactive element for users?
 const PostFooter = () => {
+  // TODO - Save icon needs to be displayed on the far right side of the screen int he footer component
   const Icon = ({imgStyle, imgURL}) => (
     <View>
       <Image style={imgStyle} source={{uri: imgURL}} />
@@ -121,6 +122,10 @@ const styles = StyleSheet.create({
   postImage: {
     height: '100%',
     resizeMode: 'cover',
+  },
+  postFooter: {
+    marginHorizontal: 11,
+    marginTop: 10,
   },
   footerIconContain: {
     flexDirection: 'row',
