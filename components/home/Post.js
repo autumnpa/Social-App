@@ -16,14 +16,16 @@ const Post = ({post}) => {
 // Create post header component
 // Take in {post} to access info in my array
 const PostHeader = ({post}) => {
-  <View style={styles.postHeadContain}>
-    <View>
-      {/* User image */}
-      <Image source={{uri: post.profile}} style={styles.postHeadProfile} />
-      {/* User name */}
-      <Text />
+  return (
+    <View style={styles.postHeadContain}>
+      <View>
+        {/* User image */}
+        <Image source={{uri: post.profile}} style={styles.postHeadProfile} />
+        {/* User name */}
+        <Text />
+      </View>
     </View>
-  </View>;
+  );
 };
 
 const styles = StyleSheet.create({
