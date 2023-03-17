@@ -10,6 +10,7 @@ const HomeScreen = () => {
       {/* Add header component here */}
       <AppHeader />
       <Stories />
+      {/* Wrap in a loop so it can access array data and create posts */}
       <Post />
     </SafeAreaView>
   );
