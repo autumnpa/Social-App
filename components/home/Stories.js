@@ -4,13 +4,15 @@ import {users} from '../../data/users';
 
 const Stories = () => {
   return (
-    <View>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <View style={{marginBottom: 13}}>
       {/* Scrollview horizontal?? The pics currently stack in a column */}
       <ScrollView horizontal>
         {/* Names that corrospond with images from data need to be looped and displayed as well */}
         {/* TODO - Add more styling - check documentation for options */}
-        {users.map(story => (
-          <View>
+        {/* Index unique key error is popping up on this line */}
+        {users.map((story, index) => (
+          <View key={index}>
             <Image source={{uri: story.image}} style={styles.story} />
             <Text>{story.user}</Text>
           </View>

@@ -5,8 +5,8 @@ import {Text, View, Image, StyleSheet} from 'react-native';
 // Takes in a post so we can use it within the return
 const Post = ({post}) => {
   return (
+    // eslint-disable-next-line react-native/no-inline-styles
     <View styles={{marginBottom: 30}}>
-      <Text>Post</Text>
       {/* Post header goes here */}
       <PostHeader post={post} />
     </View>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     borderRadius: 50,
-    marginLeft: 3,
+    marginLeft: 6,
     borderWidth: 1,
     borderColor: 'black',
   },
