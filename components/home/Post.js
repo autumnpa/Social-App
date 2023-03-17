@@ -9,6 +9,7 @@ const Post = ({post}) => {
     <View styles={{marginBottom: 30}}>
       {/* Post header goes here */}
       <PostHeader post={post} />
+      <PostImage post={post} />
     </View>
   );
 };
@@ -34,10 +35,8 @@ const PostHeader = ({post}) => {
 // Needs to grab the object from my arrays to display the post images from the data files
 const PostImage = ({post}) => {
   // DONT FORGET THE RETURN THIS TIME!!!
-  return (
-
-  )
-}
+  return <Image source={{uri: post.imageUrl}} style={styles.postImage} />;
+};
 
 const styles = StyleSheet.create({
   postHeadContain: {
@@ -61,6 +60,10 @@ const styles = StyleSheet.create({
   },
   userName: {
     marginLeft: 5,
+  },
+  postImage: {
+    height: '100%',
+    resizeMode: 'cover',
   },
 });
 
