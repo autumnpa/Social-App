@@ -36,7 +36,12 @@ const PostHeader = ({post}) => {
 const PostImage = ({post}) => {
   // DONT FORGET THE RETURN THIS TIME!!!
   // Images are overlapping - need to add more styling here
-  return <Image source={{uri: post.imageURL}} style={styles.postImage} />;
+  // Wrap in a view (div)
+  return (
+    <View style={styles.postImageContain}>
+      <Image source={{uri: post.imageURL}} style={styles.postImage} />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -61,6 +66,10 @@ const styles = StyleSheet.create({
   },
   userName: {
     marginLeft: 5,
+  },
+  postImageContain: {
+    width: '100%',
+    height: 450,
   },
   postImage: {
     height: '100%',
