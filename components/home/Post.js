@@ -26,9 +26,14 @@ const postFooterIcons = [
     imageURL: 'https://img.icons8.com/ios-glyphs/2x/bookmark-ribbon.png',
   },
 ];
+// Likes data component goes here
+// Use within the post footer component
+const Likes = ({post}) => {
+  return <Text>{post.likes}</Text>;
+};
 // Initialize Post
 // Takes in a post so we can use it within the return
-const Post = ({post}) => {
+function Post({post}) {
   return (
     // eslint-disable-next-line react-native/no-inline-styles
     <View styles={{marginBottom: 30}}>
@@ -37,10 +42,11 @@ const Post = ({post}) => {
       <PostImage post={post} />
       <View style={styles.postFooter}>
         <PostFooter />
+        <Likes post={post} />
       </View>
     </View>
   );
-};
+}
 
 // Create post header component
 // Take in {post} to access info in my array
@@ -81,11 +87,6 @@ const PostFooter = () => {
       <Image style={imgStyle} source={{uri: imgURL}} />
     </View>
   );
-// Likes data component goes here
-const Likes = ({post}) => (
-
-)
-}
   return (
     <View style={styles.footerIconContain}>
       {/* First 3 icons in a view (div) together because they are displaying on the left */}
