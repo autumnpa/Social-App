@@ -4,6 +4,8 @@ import AppHeader from '../components/home/AppHeader';
 import Stories from '../components/home/Stories';
 import Post from '../components/home/Post';
 import {posts} from '../data/posts';
+import {createStackNavigator} from '@react-navigation/stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const HomeScreen = () => {
   return (
