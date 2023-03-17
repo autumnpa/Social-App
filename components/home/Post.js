@@ -29,7 +29,7 @@ const postFooterIcons = [
 // Likes data component goes here
 // Use within the post footer component
 const Likes = ({post}) => {
-  return <Text>{post.likes}</Text>;
+  return <Text>{post.likes} likes</Text>;
 };
 // Initialize Post
 // Takes in a post so we can use it within the return
