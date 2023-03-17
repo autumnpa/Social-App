@@ -29,16 +29,18 @@ const postFooterIcons = [
 // Likes data component goes here
 // Use within the post footer component
 const Likes = ({post}) => {
-  return <Text>{post.likes} likes</Text>;
+  return <Text style={styles.likesContain}>{post.likes} likes</Text>;
 };
 // Create caption - similar to Likes component
 // Add users name before the caption - needs to be bolded
 const Caption = ({post}) => {
   return (
-    <Text>
-      <Text style={styles.userNameCaption}>{post.user}</Text>
-      <Text>{post.caption}</Text>
-    </Text>
+    <View style={styles.captionContain}>
+      <Text>
+        <Text style={styles.userNameCaption}>{post.user}</Text>
+        <Text>{post.caption}</Text>
+      </Text>
+    </View>
   );
 };
 // Initialize Post
@@ -162,7 +164,7 @@ const styles = StyleSheet.create({
   },
   postFooter: {
     marginHorizontal: 11,
-    marginTop: 10,
+    margin: 20,
   },
   footerIconContain: {
     flexDirection: 'row',
@@ -179,6 +181,12 @@ const styles = StyleSheet.create({
   rightIcon: {
     flex: 1,
     alignItems: 'flex-end',
+  },
+  likesContain: {
+    marginTop: 5,
+  },
+  captionContain: {
+    marginTop: 5,
   },
   userNameCaption: {
     fontWeight: '600',
