@@ -21,6 +21,9 @@ const styles = StyleSheet.create({
   story: {
     width: 80,
     height: 80,
+    borderRadius: 50,
+    marginLeft: 6,
+    borderWidth: 3,
   },
 });
 
