@@ -83,6 +83,9 @@ const PostFooter = () => {
   return (
     <View>
       <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[0].imageURL} />
+      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[1].imageURL} />
+      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[2].imageURL} />
+      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[3].imageURL} />
     </View>
   );
 };
