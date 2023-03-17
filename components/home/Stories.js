@@ -9,10 +9,10 @@ const Stories = () => {
       <ScrollView horizontal>
         {/* Names that corrospond with images from data need to be looped and displayed as well */}
         {/* TODO - Add more styling - check documentation for options */}
-        {users.map((story, index) => (
+        {users.map(story => (
           <View>
             <Image source={{uri: story.image}} style={styles.story} />
-            <Text>Username</Text>
+            <Text>{story.user}</Text>
           </View>
         ))}
       </ScrollView>
