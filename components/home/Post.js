@@ -31,6 +31,10 @@ const postFooterIcons = [
 const Likes = ({post}) => {
   return <Text>{post.likes} likes</Text>;
 };
+// Create caption - similar to Likes component
+const Caption = ({post}) => {
+  return <Text>{post.caption}</Text>;
+};
 // Initialize Post
 // Takes in a post so we can use it within the return
 function Post({post}) {
@@ -43,6 +47,7 @@ function Post({post}) {
       <View style={styles.postFooter}>
         <PostFooter />
         <Likes post={post} />
+        <Caption post={post} />
       </View>
     </View>
   );
