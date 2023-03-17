@@ -35,8 +35,8 @@ const Post = ({post}) => {
       {/* Post header goes here */}
       <PostHeader post={post} />
       <PostImage post={post} />
-      <View>
-        <PostFooter style={styles.postFooter} />
+      <View style={styles.postFooter}>
+        <PostFooter />
       </View>
     </View>
   );
