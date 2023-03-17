@@ -19,7 +19,7 @@ const PostHeader = ({post}) => {
   <View style={styles.postHeadContain}>
     <View>
       {/* User image */}
-      <Image />
+      <Image source={{uri: post.profile}} style={styles.postHeadProfile} />
       {/* User name */}
       <Text />
     </View>
@@ -32,6 +32,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     margin: 5,
     alignItems: 'center',
+  },
+  postHeadProfile: {
+    width: 30,
+    height: 30,
+    borderRadius: 50,
+    marginLeft: 3,
+    borderWidth: 1,
+    borderColor: 'black',
   },
 });
 
