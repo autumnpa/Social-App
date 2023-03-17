@@ -22,7 +22,7 @@ const PostHeader = ({post}) => {
         {/* User image */}
         <Image source={{uri: post.profile}} style={styles.postHeadProfile} />
         {/* User name */}
-        <Text />
+        <Text>Hello</Text>
       </View>
     </View>
   );
