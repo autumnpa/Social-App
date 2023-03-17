@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
 
 // Create Array of icons to use in the footer - like, comment, share, and save
-const PostFooterIcons = [
+const postFooterIcons = [
   {
     // Like
     // Have a version that shows liked and unliked icons
@@ -36,9 +36,7 @@ const Post = ({post}) => {
       <PostHeader post={post} />
       <PostImage post={post} />
       <View>
-        <PostFooter>
-          
-        </PostFooter>
+        <PostFooter />
       </View>
     </View>
   );
@@ -77,10 +75,17 @@ const PostImage = ({post}) => {
 // Create post footer here
 // Needs to have comments and icons - do I make this to be the interactive element for users?
 const PostFooter = () => {
+  const Icon = ({imgStyle, imgURL}) => (
+    <View>
+      <Image style={imgStyle} source={{uri: imgURL}} />
+    </View>
+  );
   return (
-
-  )
-}
+    <View>
+      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[0].imageURL} />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   postHeadContain: {
@@ -113,6 +118,10 @@ const styles = StyleSheet.create({
   postImage: {
     height: '100%',
     resizeMode: 'cover',
+  },
+  footerIcon: {
+    width: 30,
+    height: 30,
   },
 });
 
