@@ -83,10 +83,28 @@ const PostFooter = () => {
   );
   return (
     <View style={styles.footerIconContain}>
-      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[0].imageURL} />
-      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[1].imageURL} />
-      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[2].imageURL} />
-      <Icon imgStyle={styles.footerIcon} imgURL={postFooterIcons[3].imageURL} />
+      {/* First 3 icons in a view (div) together because they are displaying on the left */}
+      <View>
+        <Icon
+          imgStyle={styles.footerIcon}
+          imgURL={postFooterIcons[0].imageURL}
+        />
+        <Icon
+          imgStyle={styles.footerIcon}
+          imgURL={postFooterIcons[1].imageURL}
+        />
+        <Icon
+          imgStyle={styles.footerIcon}
+          imgURL={postFooterIcons[2].imageURL}
+        />
+      </View>
+      {/* Save icon displays on the right side in the same row so it needs its own view */}
+      <View>
+        <Icon
+          imgStyle={styles.footerIcon}
+          imgURL={postFooterIcons[3].imageURL}
+        />
+      </View>
     </View>
   );
 };
