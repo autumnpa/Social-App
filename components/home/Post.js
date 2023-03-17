@@ -22,7 +22,7 @@ const PostHeader = ({post}) => {
         {/* User image */}
         <Image source={{uri: post.profile}} style={styles.postHeadProfile} />
         {/* User name */}
-        <Text>Hello</Text>
+        <Text style={styles.userName}>{post.user}</Text>
       </View>
     </View>
   );
@@ -47,6 +47,9 @@ const styles = StyleSheet.create({
     // Changes the default lay out to render under the profile pic and render beside it
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  userName: {
+    marginLeft: 5,
   },
 });
 
