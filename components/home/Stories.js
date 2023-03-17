@@ -19,8 +19,8 @@ const Stories = () => {
 
 const styles = StyleSheet.create({
   story: {
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
     borderRadius: 50,
     marginLeft: 6,
     borderWidth: 3,
