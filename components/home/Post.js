@@ -35,6 +35,7 @@ const PostHeader = ({post}) => {
 // Needs to grab the object from my arrays to display the post images from the data files
 const PostImage = ({post}) => {
   // DONT FORGET THE RETURN THIS TIME!!!
+  // Images are overlapping - need to add more styling here
   return <Image source={{uri: post.imageURL}} style={styles.postImage} />;
 };
 
