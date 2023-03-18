@@ -46,7 +46,7 @@ const SearchContent = () => {
                 {data.images.map((imageData, imgIndex) => {
                   return (
                     <TouchableOpacity>
-                      <Image source={imageData} />
+                      <Image source={imageData} style={styles.imageData}/>
                     </TouchableOpacity>
                   );
                 })}
@@ -60,7 +60,10 @@ const SearchContent = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {},
+  imageData: {
+    width: 129,
+    height: 150,
+  },
 });
 
 export default SearchContent;
