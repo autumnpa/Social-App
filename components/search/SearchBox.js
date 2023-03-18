@@ -6,7 +6,7 @@ const SearchBox = () => {
   return (
     <View styles={styles.container}>
       <TextInput
-        placeholder="Search here..."
+        placeholder="Search"
         placeholderTextColor="#909090"
         style={styles.searchInput}
       />
@@ -25,6 +25,10 @@ const styles = StyleSheet.create({
   searchInput: {
     width: '94%',
     backgroundColor: '#ebebeb',
+    borderRadius: 10,
+    alignItems: 'center',
+    fontSize: 15,
+    padding: 5,
   },
 });
 
