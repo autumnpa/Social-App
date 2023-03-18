@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 
 const SearchContent = () => {
@@ -36,7 +36,27 @@ const SearchContent = () => {
       ],
     },
   ];
-  return <View styles={styles.container} />;
+  return (
+    <View>
+      {searchImages.map((data, index) => {
+        return (
+          <>
+            {data.id === 0 ? (
+              <View>
+                {data.images.map((imageData, imgIndex) => {
+                  return (
+                    <TouchableOpacity>
+                      <Image source={imageData} />
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+            ) : null}
+          </>
+        );
+      })}
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
