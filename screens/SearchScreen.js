@@ -1,12 +1,14 @@
 import React from 'react';
 import {ScrollView, Text, View, StyleSheet} from 'react-native';
 import SearchBox from '../components/search/SearchBox';
+import SearchContent from '../components/search/SearchContent';
 
 const SearchScreen = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
         <SearchBox />
+        <SearchContent />
       </ScrollView>
     </View>
   );
