@@ -18,7 +18,6 @@ const Stories = () => {
           </View>
         ))}
       </ScrollView>
-      <Text>Stories</Text>
     </View>
   );
 };
