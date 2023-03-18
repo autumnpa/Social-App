@@ -1,5 +1,4 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import {createStackNavigator} from 'react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from './screens/HomeScreen';
@@ -7,7 +6,7 @@ import NewPostScreen from './screens/NewPostScreen';
 
 const Stack = createStackNavigator();
 
-const navigationStack = () => {
+const NavigationStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="HomeScreen">
@@ -19,4 +18,4 @@ const navigationStack = () => {
   );
 };
 
-export default navigationStack;
+export default NavigationStack;
