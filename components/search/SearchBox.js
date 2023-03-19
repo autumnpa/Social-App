@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     fontSize: 15,
-    padding: 5,
+    padding: 10,
+    marginBottom: 15,
   },
 });
 
