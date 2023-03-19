@@ -1,10 +1,16 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 
-const NewPostScreen = () => {
+const AddNewPost = ({navigation}) => {
   return (
     <View>
       <Text>Add New Post</Text>
+      <Button
+        title="Next"
+        onPress={() => {
+          navigation.navigate('ConfirmPost');
+        }}
+      />
     </View>
   );
 };
@@ -20,4 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NewPostScreen;
+export default AddNewPost;
