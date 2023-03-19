@@ -9,8 +9,16 @@ const Stack = createStackNavigator();
 const NewPostStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="AddNewPost" component={AddNewPost} />
-      <Stack.Screen name="ConfirmPost" component={ConfirmPost} />
+      <Stack.Screen
+        name="AddNewPost"
+        component={AddNewPost}
+        options={{title: 'Add New Post'}}
+      />
+      <Stack.Screen
+        name="ConfirmPost"
+        component={ConfirmPost}
+        options={{title: 'Confirm Post'}}
+      />
     </Stack.Navigator>
   );
 };
